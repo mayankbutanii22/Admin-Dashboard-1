@@ -3,8 +3,8 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "./styles/theme/theme";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { GlobalStyles } from "./styles/global/globalStyles";
-import BaseLayout from "./Components/layout/BaseLayout";
-import Dashboard from "./Screens/dashboard/DashboardScreen";
+import BaseLayout from "./components/layout/BaseLayout";
+import DashboardScreen from "./screens/dashboard/DashboardScreen";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           <GlobalStyles />
           <Routes>
             <Route path="/" element={<BaseLayout />}>
-              <Route path="/" element={<Dashboard />} />
+              <Route path="/" element={<DashboardScreen />} />
             </Route>
           </Routes>
         </Router>
