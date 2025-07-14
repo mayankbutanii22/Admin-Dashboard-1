@@ -4,7 +4,7 @@ import { theme } from "./styles/theme/theme";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { GlobalStyles } from "./styles/global/globalStyles";
 import BaseLayout from "./components/layout/BaseLayout";
-import DashboardScreen from "./screens/dashboard/DashboardScreen";
+import DashboardScreen from "./Screens/Dashboard/DashboardScreen";
 
 function App() {
   return (
